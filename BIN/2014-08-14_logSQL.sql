@@ -1,0 +1,12 @@
+DELETE FROM creature WHERE guid=591160;
+INSERT INTO creature VALUES (591160,98001,0,0,0,-10995.1,-3448.77,64.0787,1.80445,25,0,0,1,0,0,0);
+DELETE FROM creature WHERE guid=591160;
+DELETE FROM creature_addon WHERE guid=591160;
+DELETE FROM creature_movement WHERE id=591160;
+DELETE FROM game_event_creature WHERE guid=591160;
+DELETE FROM game_event_creature_data WHERE guid=591160;
+DELETE FROM creature_battleground WHERE guid=591160;
+DELETE FROM creature_linking WHERE guid=591160 OR master_guid=591160;
+INSERT INTO npc_vendor (entry,item,maxcount,incrtime) VALUES('999220','5140','0','0');
+DELETE FROM creature WHERE guid=591160;
+INSERT INTO creature VALUES (591160,12794,450,0,1380,247.135,85.6257,24.7764,3.37066,25,0,0,4108,0,0,0);

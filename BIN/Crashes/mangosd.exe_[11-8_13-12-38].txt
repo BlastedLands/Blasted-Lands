@@ -1,0 +1,124 @@
+Revision: * * 20002 *
+Date 11:8:2014. Time 13:12 
+//=====================================================
+*** Hardware ***
+Processor: Intel(R) Core(TM) i5-2300 CPU @ 2.80GHz
+Number Of Processors: 4
+Physical Memory: 4194303 KB (Available: 4126872 KB)
+Commit Charge Limit: 4194303 KB
+
+*** Operation System ***
+Windows 8 (Version 6.2, Build 9200)
+
+//=====================================================
+Exception code: C0000005 ACCESS_VIOLATION
+Fault address:  00759778 01:00358778 F:\Rel20\BIN\mangosd.exe
+
+Registers:
+EAX:000007FA
+EBX:0CC711D8
+ECX:56DC04C0
+EDX:00000018
+ESI:0CE1F348
+EDI:0500B4E8
+CS:EIP:0023:00759778
+SS:ESP:002B:0D55CBE4  EBP:0D55DC00
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00010206
+
+Call stack:
+Address   Frame     Function      SourceFile
+00759778  00000000  GameObject::Create+2B8  f:\rel20\server\src\game\gameobject.cpp line 221
+0075A605  00000000  GameObject::LoadFromDB+B5  f:\rel20\server\src\game\gameobject.cpp line 674
+007C1A7D  00000000  LoadHelper<GameObject>+8D  f:\rel20\server\src\game\objectgridloader.cpp line 126
+007C2934  00000000  ObjectGridLoader::Visit+C4  f:\rel20\server\src\game\objectgridloader.cpp line 189
+007C1F9E  00000000  VisitorHelper<ObjectGridLoader,GameObject>+E  f:\rel20\server\src\framework\gamesystem\typecontainervisitor.h line 73
+007C1FB0  00000000  VisitorHelper<ObjectGridLoader,GameObject,TypeList<Creature,TypeList<DynamicObject,TypeList<Corpse,TypeNull> > > >+10  f:\rel20\server\src\framework\gamesystem\typecontainervisitor.h line 85
+007C2424  00000000  ObjectGridLoader::Load+14  f:\rel20\server\src\game\objectgridloader.cpp line 230
+007C259E  00000000  ObjectGridLoader::LoadN+5E  f:\rel20\server\src\game\objectgridloader.cpp line 244
+00528C7A  00000000  Map::EnsureGridLoaded+11A  f:\rel20\server\src\game\map.cpp line 285
+00528D11  00000000  Map::EnsureGridLoadedAtEnter+11  f:\rel20\server\src\game\map.cpp line 246
+0052771E  00000000  Map::Add+10E  f:\rel20\server\src\game\map.cpp line 309
+008520FD  00000000  WorldSession::HandlePlayerLogin+A2D  f:\rel20\server\src\game\characterhandler.cpp line 622
+0085298B  00000000  CharacterHandler::HandlePlayerLoginCallback+3B  f:\rel20\server\src\game\characterhandler.cpp line 134
+008501E0  00000000  MaNGOS::_IQueryCallback<MaNGOS::_Callback<CharacterHandler,QueryResult *,SqlQueryHolder *,void,void> >::Execute+10  f:\rel20\server\src\framework\utilities\callback.h line 840
+0049861A  00000000  SqlResultQueue::Update+AA  f:\rel20\server\src\shared\database\sqloperations.cpp line 112
+004AC55A  00000000  World::UpdateResultQueue+A  f:\rel20\server\src\game\world.cpp line 1963
+004AC351  00000000  World::Update+371  f:\rel20\server\src\game\world.cpp line 1493
+0048374F  00000000  WorldRunnable::run+3F  f:\rel20\server\src\mangosd\worldrunnable.cpp line 69
+00495ACB  00000000  ACE_Based::Thread::ThreadTask+1B  f:\rel20\server\src\shared\threading.cpp line 200
+66A874FF  00000000  ACE_OS_Thread_Adapter::invoke+7F  f:\rel20\server\dep\ace_wrappers\ace\os_thread_adapter.cpp line 86
+708BF2E9  00000000  __get_tlsindex+61
+708BF2CD  00000000  __get_tlsindex+45
+7795919F  00000000  BaseThreadInitThunk+E
+77DFA8CB  00000000  RtlInitializeExceptionChain+84
+77DFA8A1  00000000  RtlInitializeExceptionChain+5A
+========================
+Local Variables And Parameters
+
+Call stack:
+Address   Frame     Function      SourceFile
+00759778  00000000  GameObject::Create+2B8  f:\rel20\server\src\game\gameobject.cpp line 221
+punting on symbol guidlow
+punting on symbol name_id
+punting on symbol map
+punting on symbol x
+punting on symbol y
+punting on symbol z
+punting on symbol ang
+punting on symbol rotation0
+punting on symbol rotation1
+punting on symbol rotation2
+punting on symbol rotation3
+punting on symbol animprogress
+punting on symbol go_state
+punting on symbol st
+
+0075A605  00000000  GameObject::LoadFromDB+B5  f:\rel20\server\src\game\gameobject.cpp line 674
+punting on symbol guid
+punting on symbol map
+punting on symbol z
+punting on symbol x
+punting on symbol y
+
+007C1A7D  00000000  LoadHelper<GameObject>+8D  f:\rel20\server\src\game\objectgridloader.cpp line 126
+punting on symbol guid_set
+punting on symbol cell
+punting on symbol __formal
+punting on symbol count
+punting on symbol map
+punting on symbol grid
+
+007C2934  00000000  ObjectGridLoader::Visit+C4  f:\rel20\server\src\game\objectgridloader.cpp line 189
+punting on symbol m
+punting on symbol cell_pair
+
+007C1F9E  00000000  VisitorHelper<ObjectGridLoader,GameObject>+E  f:\rel20\server\src\framework\gamesystem\typecontainervisitor.h line 73
+punting on symbol v
+punting on symbol c
+
+007C1FB0  00000000  VisitorHelper<ObjectGridLoader,GameObject,TypeList<Creature,TypeList<DynamicObject,TypeList<Corpse,TypeNull> > > >+10  f:\rel20\server\src\framework\gamesystem\typecontainervisitor.h line 85
+punting on symbol v
+punting on symbol c
+
+007C2424  00000000  ObjectGridLoader::Load+14  f:\rel20\server\src\game\objectgridloader.cpp line 230
+punting on symbol grid
+punting on symbol wloader
+
+007C259E  00000000  ObjectGridLoader::LoadN+5E  f:\rel20\server\src\game\objectgridloader.cpp line 244
+
+00528C7A  00000000  Map::EnsureGridLoaded+11A  f:\rel20\server\src\game\map.cpp line 285
+punting on symbol cell
+punting on symbol st
+punting on symbol loader
+
+00528D11  00000000  Map::EnsureGridLoadedAtEnter+11  f:\rel20\server\src\game\map.cpp line 246
+punting on symbol cell
+punting on symbol player
+
+0052771E  00000000  Map::Add+10E  f:\rel20\server\src\game\map.cpp line 309
+punting on symbol player
+punting on symbol cell
+
+008520FD  00000000  WorldSession::HandlePlayerLogin+A2D  f:\rel20\server\src\game\characterhandler.cpp line 622
+punting on symbol holder

@@ -1,0 +1,262 @@
+Revision: * * 20002 *
+Date 10:8:2014. Time 18:56 
+//=====================================================
+*** Hardware ***
+Processor: Intel(R) Core(TM) i5-2300 CPU @ 2.80GHz
+Number Of Processors: 4
+Physical Memory: 4194303 KB (Available: 4194303 KB)
+Commit Charge Limit: 4194303 KB
+
+*** Operation System ***
+Windows 8 (Version 6.2, Build 9200)
+
+//=====================================================
+Exception code: E06D7363 
+Fault address:  74D31D4D 01:00010D4D C:\Windows\SYSTEM32\KERNELBASE.dll
+
+Registers:
+EAX:0D61E8C0
+EBX:0D61EA88
+ECX:00000003
+EDX:00000000
+ESI:0D61EA58
+EDI:00000023
+CS:EIP:0023:74D31D4D
+SS:ESP:002B:0D61E8C0  EBP:0D61E918
+DS:002B  ES:002B  FS:0053  GS:002B
+Flags:00000216
+
+Call stack:
+Address   Frame     Function      SourceFile
+74D31D4D  00000000  RaiseException+48
+68A39863  00000000  longjmp+BF
+00879542  00000000  BIH::subdivide+7A2  f:\rel20\server\src\game\vmap\bih.cpp line 62
+008794D2  00000000  BIH::subdivide+732  f:\rel20\server\src\game\vmap\bih.cpp line 252
+008794D2  00000000  BIH::subdivide+732  f:\rel20\server\src\game\vmap\bih.cpp line 252
+008794D2  00000000  BIH::subdivide+732  f:\rel20\server\src\game\vmap\bih.cpp line 252
+00878ADA  00000000  BIH::buildHierarchy+9A  f:\rel20\server\src\game\vmap\bih.cpp line 38
+007BDE50  00000000  BIH::build<void __cdecl(GameObjectModel const *,G3D::AABox &),G3D::Array<GameObjectModel const *,10,32> >+290  f:\rel20\server\src\game\vmap\bih.h line 157
+007BFDA8  00000000  RegularGrid2D<GameObjectModel,BIHWrap<GameObjectModel,BoundsTrait<GameObjectModel> >,NodeCreator<BIHWrap<GameObjectModel,BoundsTrait<GameObjectModel> > >,PositionTrait<GameObjectModel> >::balance+88  f:\rel20\server\src\game\vmap\regulargrid.h line 148
+007C1D69  00000000  DynamicMapTree::update+39  f:\rel20\server\src\game\vmap\dynamictree.cpp line 144
+0052CAFA  00000000  Map::Update+4A  f:\rel20\server\src\game\map.cpp line 461
+0068F529  00000000  MapManager::Update+69  f:\rel20\server\src\game\mapmanager.cpp line 183
+004AC30F  00000000  World::Update+31F  f:\rel20\server\src\game\world.cpp line 1474
+0048375F  00000000  WorldRunnable::run+3F  f:\rel20\server\src\mangosd\worldrunnable.cpp line 69
+00495ADB  00000000  ACE_Based::Thread::ThreadTask+1B  f:\rel20\server\src\shared\threading.cpp line 200
+688B74FF  00000000  ACE_OS_Thread_Adapter::invoke+7F  f:\rel20\server\dep\ace_wrappers\ace\os_thread_adapter.cpp line 86
+68A4F2E9  00000000  __get_tlsindex+61
+68A4F2CD  00000000  __get_tlsindex+45
+76A6919F  00000000  BaseThreadInitThunk+E
+76FDA8CB  00000000  RtlInitializeExceptionChain+84
+76FDA8A1  00000000  RtlInitializeExceptionChain+5A
+========================
+Local Variables And Parameters
+
+Call stack:
+Address   Frame     Function      SourceFile
+74D31D4D  00000000  RaiseException+48
+
+68A39863  00000000  longjmp+BF
+
+00879542  00000000  BIH::subdivide+7A2  f:\rel20\server\src\game\vmap\bih.cpp line 62
+punting on symbol left
+punting on symbol right
+punting on symbol tempTree
+punting on symbol dat
+punting on symbol gridBox
+punting on symbol nodeBox
+punting on symbol nodeIndex
+punting on symbol depth
+punting on symbol stats
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipR
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol prevClip
+punting on symbol split
+punting on symbol prevSplit
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipL
+punting on symbol d
+punting on symbol nodeL
+punting on symbol nodeR
+punting on symbol minb
+punting on symbol maxb
+
+008794D2  00000000  BIH::subdivide+732  f:\rel20\server\src\game\vmap\bih.cpp line 252
+punting on symbol left
+punting on symbol right
+punting on symbol tempTree
+punting on symbol dat
+punting on symbol gridBox
+punting on symbol nodeBox
+punting on symbol nodeIndex
+punting on symbol depth
+punting on symbol stats
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipR
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol prevClip
+punting on symbol split
+punting on symbol prevSplit
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipL
+punting on symbol d
+punting on symbol nodeL
+punting on symbol nodeR
+punting on symbol minb
+punting on symbol maxb
+
+008794D2  00000000  BIH::subdivide+732  f:\rel20\server\src\game\vmap\bih.cpp line 252
+punting on symbol left
+punting on symbol right
+punting on symbol tempTree
+punting on symbol dat
+punting on symbol gridBox
+punting on symbol nodeBox
+punting on symbol nodeIndex
+punting on symbol depth
+punting on symbol stats
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipR
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol prevClip
+punting on symbol split
+punting on symbol prevSplit
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipL
+punting on symbol d
+punting on symbol nodeL
+punting on symbol nodeR
+punting on symbol minb
+punting on symbol maxb
+
+008794D2  00000000  BIH::subdivide+732  f:\rel20\server\src\game\vmap\bih.cpp line 252
+punting on symbol left
+punting on symbol right
+punting on symbol tempTree
+punting on symbol dat
+punting on symbol gridBox
+punting on symbol nodeBox
+punting on symbol nodeIndex
+punting on symbol depth
+punting on symbol stats
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipR
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol prevClip
+punting on symbol split
+punting on symbol prevSplit
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+punting on symbol clipL
+punting on symbol d
+punting on symbol nodeL
+punting on symbol nodeR
+punting on symbol minb
+punting on symbol maxb
+
+00878ADA  00000000  BIH::buildHierarchy+9A  f:\rel20\server\src\game\vmap\bih.cpp line 38
+punting on symbol tempTree
+punting on symbol dat
+punting on symbol stats
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+	Local  AABound
+		 <user defined>  lo
+		 <user defined>  hi
+		 <user defined>  AABound
+		 <user defined>  operator=
+
+
+007BDE50  00000000  BIH::build<void __cdecl(GameObjectModel const *,G3D::AABox &),G3D::Array<GameObjectModel const *,10,32> >+290  f:\rel20\server\src\game\vmap\bih.h line 157
+punting on symbol primitives
+punting on symbol getBounds
+punting on symbol leafSize
+punting on symbol printStats
